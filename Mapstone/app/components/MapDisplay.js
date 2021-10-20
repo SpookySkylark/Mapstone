@@ -8,48 +8,6 @@ import {Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
     lng: -123.293
   };
 
-/*   const MapDisplay = ({jsonData}) => {
-    return (
-        <GoogleApiWrapper
-          bootstrapURLKeys={{ key: "AIzaSyDpuqEzY_XBZV-9id3QI4BMnr2flj5Bdt0"}}
-          google={this.props.google}
-          mapContainerStyle={containerStyle}
-          defaultCenter ={center}
-          yesIWantToUseGoogleMapApiInternals
-          defaultZoom ={12}
-        >
-
-        </GoogleApiWrapper>
-
-    )
-  }; */ 
-
-//export default MapDisplay;
-  
-  
-/* export class MapDisplay extends Component {
-  
-  render() {
-    return (
-    <div>
-      <Map
-        google={this.props.google}
-        zoom={12}
-        style={mapStyles}
-        initialCenter={
-          {
-            lat: 48.4622,
-            lng: -123.293
-          }
-        }
-      >
-
-    </Map>
-  </div>
-    );
-  }
-}*/
-
 
 function MapDisplay({google, jsonData}) {
   const [ activeMarker, setActiveMarker] = useState({});
@@ -87,26 +45,3 @@ export default GoogleApiWrapper({
   apiKey: process.env.NEXT_PUBLIC_GOOGLE_API
 })(MapDisplay);
 
-/* const LocationPin = ({ text }) => (
-  <div className="pin">
-    <Icon icon={locationIcon} className="pin-icon" />
-    <p className="pin-text">{text}</p>
-  </div>
-) */
-//{renderInfoWindow(pins)}
-
-/* const renderInfoWindow = (marker) => {
-  if(activeMarker == marker) {
-    console.log(marker);
-    return (<InfoWindow
-      position={marker.position}
-      visible={true}
-      ><div>
-          <h1>{marker.title}</h1>
-          {marker.description}
-        </div>
-      </InfoWindow>);
-  } else {
-    return '';
-  }
-}; */
