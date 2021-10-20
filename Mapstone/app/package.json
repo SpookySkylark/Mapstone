@@ -1,0 +1,31 @@
+{
+  "name": "mapstone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=local && next dev",
+    "build": "NODE_ENV=local && next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.12.1",
+    "bootstrap": "^4.6.0",
+    "formik": "^2.2.6",
+    "google-maps-react": "^2.0.6",
+    "jqeury": "0.0.1-security",
+    "jwt-decode": "^3.1.2",
+    "ky": "^0.25.1",
+    "ky-universal": "^0.8.2",
+    "next": "^10.2.3",
+    "popper.js": "^1.16.1",
+    "react": "17.0.1",
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "17.0.1",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.3.1",
+    "yup": "^0.32.8"
+  }
+}
