@@ -14,11 +14,6 @@ const getAllPins = async(req, res) => {
 const addNewPin = async(req, res) => {
     //res.status(200).send('Successful API POST Request');
     try {
-        //let message = await messageSchema.validate(req.body);
-        //TODO: Add message as first element of array and respond with 201 created and the message as JSON in the body
-        //message.id = messages.length;
-        //messages.unshift(message);
-        //res.status(201).send('Added message');
         let message = await pinModel.create(req.body);
         res.status(201).json(message);
         //console.log(messages);
